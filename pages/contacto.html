@@ -7,91 +7,148 @@
     <script src="https://kit.fontawesome.com/6bd7e88917.js" crossorigin="anonymous"></script>
     <title> Villa Tatto </title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 
 <body>
-    <header class="header"> <!-- *************** LOGO Y NAVEGACION *********************-->
-        <div class="divheader">
-            <a class="logo" href="../index.html">
-                <img class="logoimg" src="../assets/img/logo64px.png" alt="Logo de Villa Tatto, casa de tatuajes ">
-            </a>
-            <audio class="audio" controls src="../assets/audio/11 Mine Mine Mine! (Orchestral Version).ogg">Musica
-                instrumental,
-                Banda Wind
-                Rose,
-                Nombre de la cancion: Mine Mine Mine</audio>
-            <!-- ************************************* FIN DE MUSICA ***************************************************-->
+    <header class="header position-sticky top-0">
 
-            <nav class="navegacion">
-                <ul class="listanav">
-                    <li><a class="linkitem" href="../index.html">Inicio</a></li>
-                    <li><a class="linkitem" href="./galeria.html">Galeria</a></li>
-                    <li><a class="linkitem" href="./quiensoy.html">¿Quien Soy?</a></li>
-                    <li><a class="linkitem" href="./eventos.html">Eventos</a></li>
-                    <li><a class="linkitem" href="./contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bgHeader">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/img/logo64px.png" alt="Logo de Golondrina ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end ">
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./quiensoy.html">¡Quien Soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./eventos.html"> Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav active" href="./contacto.html">Contacto</a>
+                        </li>
 
-            </nav>
-            <!-- *********************************** MUSICA ********************************************************-->
 
-        </div>
+                    </ul>
 
-    </header> <!-- *************************** FIN DE LOGO Y NAVEGACION ****************-->
+                </div>
+            </div>
+        </nav>
+
+    </header>
     <main id="top" class="main">
-        <form action="valida.html">
+        <section class="container mt-3 mb-3">
+            <div
+                class="row justify-content-center justify-content-md-between align-items-center align-items-md-stretch">
+                <div class="col-12 text-center"> <!-- ********************** TITULOS ****************-->
+                    <section class="fc_h1">
+                        <h1 class="mt-5">Contacto</h1>
+                    </section>
 
-            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" minlength="3 maxlength=" 50"
-                required autofocus autocomplete="off">
-            <input id="mail" name="mail" type="mail" placeholder="ejemplo@dominio.com" required>
-            <input id="telefono" name="telefono" type="text" placeholder="1123456789" required>
-            <textarea name="comentario" id="comentario" cols="30" rows="10"
-                placeholder="Ingrese un comentario"></textarea>
+                    <h3 class=" fc_h3">¿Sabias que?</h3>
+                    <h4 class=" fc_h4 mt-3 w-50 fs-6 mx-auto">En en Antiguo Egipto también hacían uso de los tatuajes
+                        para
+                        decorar su cuerpo. Empleaban una
+                        tinta formada por corteza de pino, extracto de bronce, vinagre, vitriolo, puerro y huevos de
+                        insecto.</h4>
+                </div>
+                <div
+                    class="mt-5 mb-5 row justify-content-center justify-content-md-between align-items-center align-items-md-stretch">
+                    <!-- **** FORMULARIO ***-->
+                    <div class="col-12 col-md-6">
+                        <form action="">
+                            <div class="mb-3"><!-- **************** NOMBRE ************************-->
+                                <input type="text" placeholder="Nombre" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="mb-3"> <!-- **************** MAIL ************************-->
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3"> <!-- **************** TELEFONO ************************-->
+                                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Télefono">
+                            </div>
+                            <div class="mb-3"> <!-- ****************** CONSULTAS *************-->
+                                <textarea class="form-control" id="consulta" name="consulta"
+                                    placeholder="Escriba su consulta" rows="3"></textarea>
+                            </div>
+                            <div class="text-center"> <!-- ******************** BOTON ENVIAR ******************-->
+                                <input type="submit" class=" w-50 btn btn-primary bg_boton mb-3" id="enviar"
+                                    name="enviar" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="../assets/img/contacto.jpg" class="img-fluid "
+                            alt="Imagen de una Mujer de espaldas con tatuaje Kanji en la columna vertebral y un infinito en la nuca ">
 
 
-        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
-    <footer class="footer">
-        <section class="contenedorredes">
-            <div>
-                <h3 class="tituloredes">Mis Redes Sociales</h3>
-                <section class="redes">
-                    <a class="linkredes" href="https://www.youtube.com/" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.tiktok.com/" target="_blank">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.instagram.com/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.facebook.com/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a class="top" href="#top">
-                        <img src="../assets/img/top.png"
-                            alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
-                    </a>
-                </section>
+    <footer class=" bg-color container-fluid">
+        <div class="row">
+            <section class=" col-12 col-md-4 ">
+                <h3 class=" fs-3 mb-3 mt-3 ">Mis Redes Sociales</h3>
+                <a class="iconos" href="https://www.youtube.com/@avalontattoomoron.9811/featured" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="iconos" href="https://www.tiktok.com/@marcelovillalbatattoo" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a class="iconos" href="https://www.instagram.com/marcelo.villalba.tattoo/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="iconos" href="https://www.facebook.com/marcelo.villalba.39" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
 
+            </section>
+            <section class="col-12 col-md-4 fs-6">
+                <div class="fs-6 mt-3 d-flex justify-content-md-between flex-wrap">
+                    <div>
+                        <p>Almte Brown 923</p>
+                        <p>Moron</p>
+                        <p>Contacto</p>
+                        <p>11-1234-5678</p>
+                        <p>villatatto@gmail.com</p>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
+                            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <div class=" col-12 col-md-4 d-flex justify-content-end ">
+                <a class="iconos top" href="#top">
+                    <img src="../assets/img/top.png"
+                        alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
+                </a>
             </div>
 
-
-        </section>
-        <section class="info">
-            <p>Almte Brown 923</p>
-            <p>Moron</p>
-            <p>Contacto</p>
-            <p>11-1234-5678</p>
-            <p>villatatto@gmail.com</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
+        </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

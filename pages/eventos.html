@@ -7,113 +7,173 @@
     <script src="https://kit.fontawesome.com/6bd7e88917.js" crossorigin="anonymous"></script>
     <title> Villa Tatto </title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 
 <body>
-    <header class="header"> <!-- *************** LOGO Y NAVEGACION *********************-->
-        <div class="divheader">
-            <a class="logo" href="../index.html">
-                <img class="logoimg" src="../assets/img/logo64px.png" alt="Logo de Villa Tatto, casa de tatuajes ">
-            </a>
-            <audio class="audio" controls src="../assets/audio/11 Mine Mine Mine! (Orchestral Version).ogg">Musica
-                instrumental,
-                Banda Wind
-                Rose,
-                Nombre de la cancion: Mine Mine Mine</audio>
-            <!-- ************************************* FIN DE MUSICA ***************************************************-->
+    <header class="header position-sticky top-0">
 
-            <nav class="navegacion">
-                <ul class="listanav">
-                    <li><a class="linkitem" href="../index.html">Inicio</a></li>
-                    <li><a class="linkitem" href="./galeria.html">Galeria</a></li>
-                    <li><a class="linkitem" href="./quiensoy.html">¿Quien Soy?</a></li>
-                    <li><a class="linkitem" href="./eventos.html">Eventos</a></li>
-                    <li><a class="linkitem" href="./contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bgHeader">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/img/logo64px.png" alt="Logo de Golondrina ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end ">
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav  " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./quiensoy.html">¡Quien Soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav active" href="./eventos.html"> Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./contacto.html">Contacto</a>
+                        </li>
 
-            </nav>
-            <!-- *********************************** MUSICA ********************************************************-->
 
-        </div>
+                    </ul>
 
-    </header> <!-- *************************** FIN DE LOGO Y NAVEGACION ****************-->
+                </div>
+            </div>
+        </nav>
+
+    </header>
     <main id="top" class="main">
-        <h1>Conoce los proximos eventos y sumate! </h1>
-        <section>
-            <h2>Un tatto por mia</h2>
-            <h3>Sabado 16 de abril, 10Hs </h3>
-            <h4>Almte Brown 923, Moron</h4>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1 class="fc_h1 text-center p-3 mt-3 mb-3">Conoce los proximos eventos y sumate! </h1>
+        <section class="container">
+            <div class="card-group mb-3">
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h2 class="fc_h1 card-title">Un tatto por mia</h2>
+                        <h4 class="fc_h3 card-text">Sabado 16 de abril, 10Hs </h4>
+                        <h6 class="fc_h6 ">Almte Brown 923, Moron</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3281234027886!2d-58.39898472478711!3d-34.570563155747045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb569a4bcdd35%3A0x558fa1541e2b1c2a!2sCentro%20Costa%20Salguero!5e0!3m2!1ses-419!2sar!4v1707495184436!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h2 class="fc_h1 card-title">Primavera Tatto Festival</h2>
+                        <h4 class="fc_h3 card-text">Sabado 21 de Septiembre, 12 Hs</h4>
+                        <h6 class="fc_h6 ">Costa Salguero</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.047454887637!2d-58.6255860247826!3d-34.65350446012841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7677d4d2043%3A0x85fcef5360945f0!2sGral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20471%2C%20B1708EII%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707494988672!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h2 class="fc_h1 card-title">5° convension de Tatto</h2>
+                        <h4 class="fc_h3 card-text">Sabado 8 de Noviembre, 9Hs </h4>
+                        <h6 class="fc_h6 ">Gral Jose de San Martin 471, Moron</h6>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>La tribu expo tatto</h2>
-            <h3>Sabado 20 de Julio, 12 Hs</h3>
-            <h4>Av. Presidente Bartolome Mitre 1872, Sarandi</h4>
+        <section class="container">
+            <div class="card-group mb-3">
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9640551918646!2d-58.42350762478662!3d-34.5797760562332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59cd6452553%3A0x6b521307d135059a!2sLa%20Rural!5e0!3m2!1ses-419!2sar!4v1709081729423!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h2 class="fc_h1 card-title">Tattoo Show Rural</h2>
+                        <h4 class="fc_h3 card-text">Sabado 30 de Noviembre, 11Hs </h4>
+                        <h6 class="fc_h6 ">La Rural pedrio ferial, Palermo</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9640551918646!2d-58.42350762478662!3d-34.5797760562332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59cd6452553%3A0x6b521307d135059a!2sLa%20Rural!5e0!3m2!1ses-419!2sar!4v1709081729423!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h2 class="fc_h1 card-title">XIII Tattoo Show</h2>
+                        <h4 class="fc_h3 card-text">Sabado 7 de Diciembre, 11Hs </h4>
+                        <h6 class="fc_h6 ">La Rural pedrio ferial, Palermo</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9640551918646!2d-58.42350762478662!3d-34.5797760562332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59cd6452553%3A0x6b521307d135059a!2sLa%20Rural!5e0!3m2!1ses-419!2sar!4v1709081729423!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h2 class="fc_h1 card-title">12do Mandinga Tattoo Show</h2>
+                        <h4 class="fc_h3 card-text">Sabado 21 de Diciembre, 11Hs </h4>
+                        <h6 class="fc_h6 ">La Rural pedrio ferial, Palermo</h6>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Primavera Tatto Festival</h2>
-            <h3>Sabado 21 de Septiembre, 12 Hs</h3>
-            <h4>Costa Salguero</h4>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3281234027886!2d-58.39898472478711!3d-34.570563155747045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb569a4bcdd35%3A0x558fa1541e2b1c2a!2sCentro%20Costa%20Salguero!5e0!3m2!1ses-419!2sar!4v1707495184436!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section>
-            <h2>5° convension de Tatto</h2>
-            <h3>Sabado 8 de Noviembre, 9Hs</h3>
-            <h4>Gral Jose de San Martin 471, Moron</h4>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.047454887637!2d-58.6255860247826!3d-34.65350446012841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7677d4d2043%3A0x85fcef5360945f0!2sGral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20471%2C%20B1708EII%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707494988672!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="contenedorredes">
-            <div>
-                <h3 class="tituloredes">Mis Redes Sociales</h3>
-                <section class="redes">
-                    <a class="linkredes" href="https://www.youtube.com/" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.tiktok.com/" target="_blank">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.instagram.com/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.facebook.com/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a class="top" href="#top">
-                        <img src="../assets/img/top.png"
-                            alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
-                    </a>
-                </section>
 
+    </main>
+    <footer class=" bg-color container-fluid">
+        <div class="row">
+            <section class=" col-12 col-md-4 ">
+                <h3 class=" fs-3 mb-3 mt-3 ">Mis Redes Sociales</h3>
+                <a class="iconos" href="https://www.youtube.com/@avalontattoomoron.9811/featured" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="iconos" href="https://www.tiktok.com/@marcelovillalbatattoo" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a class="iconos" href="https://www.instagram.com/marcelo.villalba.tattoo/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="iconos" href="https://www.facebook.com/marcelo.villalba.39" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+            </section>
+            <section class="col-12 col-md-4 fs-6">
+                <div class="fs-6 mt-3 d-flex justify-content-md-between flex-wrap">
+                    <div>
+                        <p>Almte Brown 923</p>
+                        <p>Moron</p>
+                        <p>Contacto</p>
+                        <p>11-1234-5678</p>
+                        <p>villatatto@gmail.com</p>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
+                            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <div class=" col-12 col-md-4 d-flex justify-content-end ">
+                <a class="iconos top" href="#top">
+                    <img src="../assets/img/top.png"
+                        alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
+                </a>
             </div>
 
-
-        </section>
-        <section class="info">
-            <p>Almte Brown 923</p>
-            <p>Moron</p>
-            <p>Contacto</p>
-            <p>11-1234-5678</p>
-            <p>villatatto@gmail.com</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
+        </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

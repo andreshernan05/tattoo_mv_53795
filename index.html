@@ -5,109 +5,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6bd7e88917.js" crossorigin="anonymous"></script>
-    <title> Villa Tatto </title>
+    <title> Villa tattoo </title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
 
 <body>
-    <header class="header"> <!-- *************** LOGO Y NAVEGACION *********************-->
-        <div class="divheader">
-            <a class="logo" href="#">
-                <img src="./assets/img/logo64px.png" alt="Logo de Villa Tatto, casa de tatuajes ">
-            </a>
-            <!-- *********************************** MUSICA ********************************************************-->
-            <audio class="audio" controls autoplay
-                src="./assets/audio/11 Mine Mine Mine! (Orchestral Version).ogg">Musica
-                instrumental,
-                Banda Wind
-                Rose,
-                Nombre de la cancion: Mine Mine Mine</audio>
-            <!-- ************************************* FIN DE MUSICA ***************************************************-->
+    <header class="header top-0">
 
-            <nav class="navegacion">
-                <ul class="listanav">
-                    <li><a class="linkitem" href="#">Inicio</a></li>
-                    <li><a class="linkitem" href="./pages/galeria.html">Galeria</a></li>
-                    <li><a class="linkitem" href="./pages/quiensoy.html">¿Quien Soy?</a></li>
-                    <li><a class="linkitem" href="./pages/eventos.html">Eventos</a></li>
-                    <li><a class="linkitem" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bgHeader">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./assets/img/logo64px.png" alt="Logo de Golondrina ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end ">
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav active " aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./pages/quiensoy.html">¡Quien Soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./pages/eventos.html"> Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./pages/contacto.html">Contacto</a>
+                        </li>
 
-            </nav>
 
+                    </ul>
 
-        </div>
+                </div>
+            </div>
+        </nav>
 
-    </header> <!-- *************************** FIN DE LOGO Y NAVEGACION ****************-->
+    </header>
 
     <main class="main"><!-- ***************** COMIENZO DE MAIN ********************-->
-        <section id="top" class="contenedortextos">
-            <!-- ********************** TITULO, SUB Y PARRAFO *********************** -->
-            <h1 class="ctitulo "> Villa Tatto</h1>
-            <h2 class="csubtitulo ">Ponele tinta a tu vida</h2>
-            <p class="cparrafo ">Hola, soy Marcelo VIllalba, tengo 50 años y tengo mas de 20 años
-                dedicandome a los
-                tatuajes. Los invito a recorrer mi pagina para conocerme un poco mas y que puedan disfrutar de mis
-                trabajos.</p>
-        </section> <!-- ***************** FIN DE TITULO, SUB Y PARRAFO ********************-->
-        <section class="contenedortarjetas"> <!-- ***************  CONTENEDOR DE TARJETAS ********-->
-            <section class="tarjetas"><!--********************* TARJETA GALERIA ************************-->
-                <img class="cimg" src="./assets/img/img_card_index.jpg"
-                    alt="Imagen de un Colibri el cual indica el acceso a la Galeria de trabajos">
-                <a class="enlacegaleria" href="./pages/galeria.html">Galeria</a>
-                <!--<h3 class="csubh3">Galeria</h3>-->
-            </section><!-- ******************************* FIN TARJETA GALERIA *************************-->
-            <section class="tarjetas">
-                <img class="cimg" src="./assets/img/img_card_index2.jpg"
-                    alt="Flyer publicirario de una convension de tatuajes con la imagen de Marcelo sosteniendo un dibujo de un Dragon tradicional realizado por él">
-                <a class="enlaceeventos" href="./pages/eventos.html">Eventos</a>
-                <!--<h3 class="csubh3">Eventos</h3>-->
-            </section>
-        </section> <!-- ************************** FIN DE CONTENEDOR DE TARJETAS **************-->
+        <section class="section_titulos mt-3">
+            <h1 class=" ctitulo "> Villa tattoo</h1>
+            <h2 class=" csubtitulo">Ponle tinta a tu vida</h2>
+            <p class=" cparrafo ">Sean todos bienvenidos a mi página, donde podrán disfrutar de mis trabajos, conocer un
+                poco de mi trayectoria en este hermoso mundo del arte en la piel y estar al día de los próximos eventos
+                relacionados al tatuaje
+            </p>
+        </section>
+
+        <section class="container mt-3">
+            <div class="card-group custom-card-group">
+                <div class="card custom-card">
+                    <!-- ************************* TARJETA ACUARELA  **************************-->
+                    <a href="./pages/galeria.html#acuarela" class="card_link"><img
+                            src="../assets/img/img_card_acuarela.jpg" class="card-img-top"
+                            alt="Tatuaje de recreacion de un Atomo en colores celestes y violetas"></a>
+                    <div class="card-body">
+                        <h5 class="card-title mt-1 fc_h1">Acuarelas</h5>
+                        <p class="card-text fc_h4">Inspirado en la técnica de pintura acuarela, este estilo de tatuaje
+                            se
+                            caracteriza por colores vibrantes y difuminados. Los tatuajes de acuarela a menudo carecen
+                            de líneas definidas y se asemejan más a una obra de arte en lienzo que a un tatuaje
+                            tradicional. La técnica implica el uso de tintas diluidas para lograr el efecto de acuarela.
+                        </p>
+                    </div>
+                </div>
+                <div class="card"> <!-- ************************* TARJETA BLACK AND GREY **************************-->
+                    <a href="./pages/galeria.html#byg" class="card_link"><img src="../assets/img/img_card_byg.jpg"
+                            class="card-img-top" alt="Rostro de mujer con la mano tocandose la boca"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fc_h1">Black and Grey</h5>
+                        <p class="card-text fc_h4">El black and grey (negro y gris) es una especie de combinación de
+                            blackwork
+                            y acuarela. El artista trabaja solo con tinta negra, y la diluye con más o menos agua para
+                            obtener distintas tonalidades de gris y crear profundidad, sombreados…</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- ************************* TARJETA CARTOONS**************************-->
+                    <a href="./pages/galeria.html#cartoon" class="card_link"><img
+                            src="../assets/img/img_card_cartoon.jpg" class="card-img-top"
+                            alt="Tatuaje de Deadpool version infantil"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fc_h1">Cartoons</h5>
+                        <p class="card-text fc_h4">Los Cartoon Tattoos hacen referencia a la estética de tatuaje que
+                            representa cualquier diseño animado, tanto de dibujos populares, dibujos anime, dibujos
+                            manga… Se trata de un estilo artístico de gran popularidad en los últimos años por su
+                            flexibilidad en la variedad de colores y tamaños.</p>
+                    </div>
+
+                </div>
+
+        </section>
+        <section class="container">
+            <div class="card-group custom-card-group">
+                <div class="card custom-card">
+                    <!-- ************************* TARJETA COVER-UP **************************-->
+                    <a href="./pages/galeria.html#cover" class="card_link"><img src=" ../assets/img/img_card_cover.jpg"
+                            class="card-img-top"
+                            alt="Imagen partida en 2 de forma horizontal, arriba es la nuca de una mujer con un tatuaje de una cruz y abajo es la misma imagen solo que la cruz esta tapada por un arbol con raices"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fc_h1">Cover up</h5>
+                        <p class="card-text fc_h4">Es un término del inglés que significa cobertura/cubrir o tapar algo.
+                            Entre
+                            los profesionales del tattoo es utilizado a nivel mundial y hace referencia al tapado de un
+                            tatuaje antiguo por otro.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- ************************* TARJETA LAMINAS **************************-->
+                    <a href="./pages/galeria.html#laminas" class="card_link"><img src="
+                        ../assets/img/img_card_lamina.jpg" class="card-img-top"
+                            alt="Torso de madera con ilustracion de Batman de Adam West"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fc_h1">Laminas</h5>
+                        <p class="card-text fc_h4">Esta seccion son diseños personales los cuales la gran mayoria fueron
+                            realizados para presentar en competencias</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- ************************* TARJETA TRADICIONAL **************************-->
+                    <a href="./pages/galeria.html#tradicional" class="card_link"><img src="
+                        ../assets/img/img_card_tradi.jpg" class="card-img-top"
+                            alt="Cabeza de serpiente atravezada por daga y rosas alrededor"> </a>
+                    <div class="card-body">
+                        <h5 class="card-title fc_h1">tradicional</h5>
+                        <p class="card-text fc_h4">También conocido como tatuaje “Old School“, este estilo se
+                            caracteriza por
+                            líneas gruesas, colores vivos y motivos clásicos como anclas, rosas y corazones. La técnica
+                            implica el uso de una máquina de bobinas y un enfoque más simple en términos de sombras y
+                            detalles</p>
+                    </div>
+                </div>
+
+        </section>
     </main><!-- ************************ FIN DE MAIN ***************************-->
 
-    <footer class="footer"> <!-- ************************* COMIENZO DE FOOTER ************-->
-        <section class="contenedorredes">
-            <div>
-                <h3 class="tituloredes">Mis Redes Sociales</h3>
-                <section class="redes">
-                    <a class="linkredes" href="https://www.youtube.com/" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.tiktok.com/" target="_blank">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.instagram.com/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.facebook.com/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a class="top" href="#top">
-                        <img src="./assets/img/top.png"
-                            alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
-                    </a>
-                </section>
+    <footer class=" bg-color container-fluid">
+        <div class="row">
+            <section class=" col-12 col-md-4 ">
+                <h3 class=" fs-3 mb-3 mt-3 ">Mis Redes Sociales</h3>
+                <a class="iconos" href="https://www.youtube.com/@avalontattoomoron.9811/featured" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="iconos" href="https://www.tiktok.com/@marcelovillalbatattoo" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a class="iconos" href="https://www.instagram.com/marcelo.villalba.tattoo/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="iconos" href="https://www.facebook.com/marcelo.villalba.39" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
 
+            </section>
+            <section class="col-12 col-md-4 fs-6">
+                <div class="fs-6 mt-3 d-flex justify-content-md-between flex-wrap">
+                    <div>
+                        <p>Almte Brown 923</p>
+                        <p>Moron</p>
+                        <p>Contacto</p>
+                        <p>11-1234-5678</p>
+                        <p>villatatto@gmail.com</p>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
+                            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <div class=" col-12 col-md-4 d-flex justify-content-end ">
+                <a class="iconos top" href="#top">
+                    <img src="./assets/img/top.png"
+                        alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
+                </a>
             </div>
 
-
-        </section>
-        <section class="info">
-            <p>Almte Brown 923</p>
-            <p>Moron</p>
-            <p>Contacto</p>
-            <p>11-1234-5678</p>
-            <p>villatatto@gmail.com</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-    </footer><!-- *********************** FIN DEL FOOTER **********************-->
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

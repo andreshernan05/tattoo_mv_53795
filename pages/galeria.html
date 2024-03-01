@@ -7,112 +7,298 @@
     <script src="https://kit.fontawesome.com/6bd7e88917.js" crossorigin="anonymous"></script>
     <title> Villa Tatto </title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 
 <body>
-    <header class="header"> <!-- *************** LOGO Y NAVEGACION *********************-->
-        <div class="divheader">
-            <a class="logo" href="../index.html">
-                <img class="logoimg" src="../assets/img/logo64px.png" alt="Logo de Villa Tatto, casa de tatuajes ">
-            </a>
-            <audio class="audio" controls src="../assets/audio/11 Mine Mine Mine! (Orchestral Version).ogg">Musica
-                instrumental,
-                Banda Wind
-                Rose,
-                Nombre de la cancion: Mine Mine Mine</audio>
-            <!-- ************************************* FIN DE MUSICA ***************************************************-->
+    <header class="header position-sticky top-0">
 
-            <nav class="navegacion">
-                <ul class="listanav">
-                    <li><a class="linkitem" href="../index.html">Inicio</a></li>
-                    <li><a class="linkitem" href="./galeria.html">Galeria</a></li>
-                    <li><a class="linkitem" href="./quiensoy.html">¿Quien Soy?</a></li>
-                    <li><a class="linkitem" href="./eventos.html">Eventos</a></li>
-                    <li><a class="linkitem" href="./contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bgHeader">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/img/logo64px.png" alt="Logo de Golondrina ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end ">
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav  " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav active" href="./quiensoy.html">¡Quien Soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./eventos.html"> Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fc_nav" href="./contacto.html">Contacto</a>
+                        </li>
 
-            </nav>
-            <!-- *********************************** MUSICA ********************************************************-->
 
-        </div>
+                    </ul>
 
-    </header> <!-- *************************** FIN DE LOGO Y NAVEGACION ****************-->
-    <main id="top" class="main">
-        <section> <!-- ************** TITULO Y SUBTITULO *************-->
-            <h1>Galeria de arte</h1>
-            <h2>Donde podran contemplar algunas de mis obras</h2>
-        </section><!-- *************** FIN SECCION DE TITULO Y SUB ***-->
-        <section> <!-- *************** BLACK AND GREY **************-->
-            <h2>Black And Grey</h2>
-            <img src="../assets/img/byg1.jpg"
-                alt="Rostro de mujer con los ojos cerrados y con la mano tocandose la cara y labios. todo en escala de grises">
-            <img src="../assets/img/byg2.jpg" alt="Ojo hiperrealista en escala de grises ">
-        </section><!-- ************** FIN SECCION BLACK AND GREY *******-->
-        <section> <!-- ************** TRADICIONAL ********************-->
-            <h2> Tradicional</h2>
-            <img src="../assets/img/tra1.jpg"
-                alt="cabeza de serpiente atravezada por daga y 2 rosas en escala de colores: verde, rojo, amarillo y negro saturados">
-            <img src="../assets/img/tra2.jpg"
-                alt="Golondrina con alas desplegadas simulando estar en vuelo en colores: negro, rojo,verde y amarillo saturados">
-        </section><!-- ************** FIN SECCION TRADICIONAL ***********-->
-        <section><!--************ ORIENTALES TRADI   *****************-->
-            <h2>Orientales Tradicional</h2>
-            <img src="../assets/img/ori1.jpg" alt="">
-            <img src="../assets/img/ori2.jpg" alt="">
-        </section><!-- ************** FIN SECCION ORIENTAL TRADI *******-->
-        <section><!--************ OLD SCHOOL     *****************-->
-            <h2>Old School</h2>
-            <img src="../assets/img/old1.jpg" alt="">
-            <img src="../assets/img/old2.jpg" alt="">
-        </section><!-- ************** FIN SECCION OLD SCHOOL *************-->
-        <section><!--************ ACUARELAS *****************-->
-            <h2>Acuarelas</h2>
-            <img src="../assets/img/acua1.webp" alt="">
-            <img src="../assets/img/acua2.jpg" alt="">
-        </section><!-- ************** FIN SECCION ACUARELAS ****************-->
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="main" id="top ">
+
+
+        <section class="section_galeria mt-3" id="Acuarelas">
+            <!-- --------------------- ACUARELAS -------------------------->
+            <h1 class="fc_h1 gal_h1"> Acuarela</h1>
+            <div class="grid-container2">
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua1.jpg"
+                        alt="Tatuaje de una mujer Pin up ligeramente de costado levantando el brazo, tiene pañuelo rojo con puntos y camina celeste">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua2.jpg" alt="Tatuaje de Alicia en el pais de las maravillas.">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua3.jpg"
+                        alt="Tatuaje del contorno de un trebol de 4 hojas y dentro es un paisaje de una casa a la orilla del mar ">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua4.jpg"
+                        alt="Tatuaje de un colibri con la frase alrededor que dice " Jamas se va lo que queda abrazado
+                        al alma" ">
+                </div>
+                <div class=" grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua5.jpg"
+                        alt="Tatuaje de un oolibri picand con un pico unas flores similares a las del cerezo.">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua6.jpg"
+                        alt="Tatuaje de colibri sobre el hombro picando una flor">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Acuarela/acua7.jpg" alt="Rostro de una mujer">
+                </div>
+            </div>
+        </section>
+
+        <section class="section_galeria" id="byg">
+            <!----------------------- BLACK AND GREY ------------------------>
+            <h1 class="fc_h1 gal_h1"> Black And Grey </h1>
+            <div class="grid-container2">
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg1.jpg" alt="Cara de un lobo sobre lateral de cuello">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg2.jpg"
+                        alt="Bandeza de argentina con escudo de AFA, 3 estrellas con los años de las copas del mundo">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg3.jpg" alt="Manga biomecanica vista de espaldas">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg4.jpg" alt="Manga biomecanica vista de costado.">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg5.jpg" alt="Manga con cara de Cristo con el sagrado corazon.">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg6.jpg"
+                        alt="La cara de la parca mirando desde arriba a una persona con capucha sentada.">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg7.jpg" alt="Reloj con el nombre `axel` en el pecho">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/byg/byg8.jpg"
+                        alt="Tatuaje del Mjolnir, el martillo de Thor, mitologia Nordica Vikinga">
+                </div>
+            </div>
+        </section>
+
+        <section class="section_galeria" id="cartoon">
+            <!----------------------- CARTOONS ------------------------>
+            <h1 class="fc_h1 gal_h1"> Cartoons</h1>
+            <div class="grid-container2">
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c1.jpg"
+                        alt="Bart Simpson sobre su patineta con la frase `yo no fui`">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c2.jpg" alt="Dori de buscando a nemo version bebe">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c3.jpg" alt="Tatuaje de El pato Lucas">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c4.jpg" alt="Tatuaje de Sailor mooon">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c5.jpg" alt="Tatuaje de Deadpool version infantil">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c6.jpg" alt="Tatuaje de Daria">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c7.jpg"
+                        alt="Tatuaje de Lisa Simpson con efecto de tatuaje tipo sticker">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/cartoons/c8.jpg" alt="Tatuaje de Mafalda">
+                </div>
+            </div>
+        </section>
+
+        <section class="section_galeria" id="cover">
+            <!----------------------- COVER - UP  ------------------------>
+            <h1 class="fc_h1 gal_h1"> Cover Up</h1>
+            <div class="grid-container2">
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover1.jpg"
+                        alt="Tatuaje 2 lineas negras en el comienzo del antebrazo derecho">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover2.jpg"
+                        alt="Tatuaje tapando lineas negras con una bosque siniestro  y unas aguilas ">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover3.jpg" alt="tatuaje de unas palabras arriba del codo derecho">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover4.jpg" alt="Tatuaje tapando las palabras con una estrella">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover5.jpg" alt="Tatuaje arriba del ombligo con el nombre `lean`">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover6.jpg" alt="Tatuaje tapando el nombre con un pez Koi">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover7.jpg"
+                        alt="Tatuaje de una especie de cienpies tipo tribal todo negro">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Covers/cover8.jpg"
+                        alt="Tatuaje tapando cienpies con un batman con la ciedad de fondo y la batiseñal">
+                </div>
+            </div>
+        </section>
+
+        <section class="section_galeria" id="laminas">
+            <!----------------------- LAMINAS ------------------------>
+            <h1 class="fc_h1 gal_h1"> Laminas</h1>
+            <div class="grid-container2">
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l1.jpg" alt="Lamina de un tipo de ave fenix con rosa de fondo">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l2.jpg" alt="Lamina de un Dragon">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l3.jpg" alt="Lamina de una Sirena ">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l4.jpg" alt="Lamina de una mujer haciendo pool dance ">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l5.jpg" alt="Lamina de otro diseño de una Sirena">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l6.jpg" alt="Lamina de otro diseño de una Sirena">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l7.jpg"
+                        alt="Lamina de un Dragon en otro estilo de dibujo y en color amarillo con una flor de loto al costado">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l8.jpg"
+                        alt="Lamina de Dragon color verde con una especie de esfera entre las garras">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Laminas/l9.jpg"
+                        alt="Torso de madera con ilustracion de Batman de Adam West">
+                </div>
+            </div>
+        </section>
+
+        <section class="section_galeria" id="tradicional">
+            <!----------------------- TRADICIONAL ------------------------>
+            <h1 class="fc_h1 gal_h1"> Tradicional</h1>
+            <div class="grid-container2">
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Tradi/t1.jpg" alt="Tatuaje de aguila con craneo entre las garras">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Tradi/t2.jpg" alt="Tatuaje de aguila">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Tradi/t3.jpg" alt="Tatuaje de Golondrina con rama de olivo en el pico">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Tradi/t4.jpg" alt="Tatuaje de una Serpiente Cobra">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Tradi/t5.jpg"
+                        alt="Tatuaje de un corazon con un listo por delante con la palabra familia">
+                </div>
+                <div class="grid-item_galeria">
+                    <img src="../assets/img/Tradi/t6.jpg"
+                        alt="Tatuaje de media calavera con una flor, dientes volando y un liston con la frase el respeto corserva los dientes">
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <section class="contenedorredes">
-            <div>
-                <h3 class="tituloredes">Mis Redes Sociales</h3>
-                <section class="redes">
-                    <a class="linkredes" href="https://www.youtube.com/" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.tiktok.com/" target="_blank">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.instagram.com/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="linkredes" href="https://www.facebook.com/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a class="top" href="#top">
-                        <img src="../assets/img/top.png"
-                            alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
-                    </a>
-                </section>
+    <footer class=" bg-color container-fluid">
+        <div class="row">
+            <section class=" col-12 col-md-4 ">
+                <h3 class=" fs-3 mb-3 mt-3 ">Mis Redes Sociales</h3>
+                <a class="iconos" href="https://www.youtube.com/@avalontattoomoron.9811/featured" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="iconos" href="https://www.tiktok.com/@marcelovillalbatattoo" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a class="iconos" href="https://www.instagram.com/marcelo.villalba.tattoo/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="iconos" href="https://www.facebook.com/marcelo.villalba.39" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
 
+            </section>
+            <section class="col-12 col-md-4 fs-6">
+                <div class="fs-6 mt-3 d-flex justify-content-md-between flex-wrap">
+                    <div>
+                        <p>Almte Brown 923</p>
+                        <p>Moron</p>
+                        <p>Contacto</p>
+                        <p>11-1234-5678</p>
+                        <p>villatatto@gmail.com</p>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
+                            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <div class=" col-12 col-md-4 d-flex justify-content-end ">
+                <a class="iconos top" href="#top">
+                    <img src="../assets/img/top.png"
+                        alt="Flecha negra apuntando hacia arriba para que te lleve al inicio de la pagina">
+                </a>
             </div>
 
-
-        </section>
-        <section class="info">
-            <p>Almte Brown 923</p>
-            <p>Moron</p>
-            <p>Contacto</p>
-            <p>11-1234-5678</p>
-            <p>villatatto@gmail.com</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1727777945885!2d-58.62406082344168!3d-34.650339259963374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc760c7662f57%3A0x6a026dd224ab2a56!2sAvalon%20Tattoo%20Moron!5e0!3m2!1ses-419!2sar!4v1707010510342!5m2!1ses-419!2sar"
-                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
+        </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
