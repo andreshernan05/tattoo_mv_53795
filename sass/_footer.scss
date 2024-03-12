@@ -1,0 +1,75 @@
+.h3_footer {
+    color: $rd-color;
+}
+
+.bg-color {
+    background-image: $gradiente_footer;
+}
+
+.bg-color .iconos {
+    text-decoration: none;
+}
+
+.bg-color .iconos .fa-youtube {
+    color: $yt-color;
+    font-size: map-get($tamanios , 3);
+    margin-right: map-get($pixel, 10);
+}
+
+.bg-color .iconos .fa-tiktok {
+    color: $tk-color;
+    font-size: map-get($tamanios , 3);
+    margin-right: map-get($pixel, 10);
+}
+
+.bg-color .iconos .fa-instagram {
+    color: $ig-color;
+    font-size: map-get($tamanios , 3);
+    margin-right: map-get($pixel, 10);
+}
+
+footer {
+    position: relative;
+}
+
+footer .top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+#ig-icon {
+    background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-color .iconos .fa-facebook {
+    color: $fb-color;
+    font-size: map-get($tamanios , 3);
+    margin-right: map-get($pixel, 10);
+}
+
+.bg-color .iconos .top {
+    margin-right: map-get($pixel, 100);
+    margin-top: map-get($pixel, 100);
+    padding-top: map-get($pixel, 100);
+}
+
+.parrafos_footer {
+    color: $rd-color;
+}
+
+@media screen and (max-width: 768px) {
+    footer section {
+        border-bottom: map-get($pixel , 2) solid $line-color;
+    }
+}
+
+@media (min-width: 768px) {
+    footer .top {
+        transform: translateY(calc(-50% - 20px));
+    }
+}

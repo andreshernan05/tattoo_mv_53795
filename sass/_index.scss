@@ -1,0 +1,30 @@
+.custom-card-group {
+    border: 2px solid $tk-color;
+    margin-bottom: map-get($pixel , 20);
+}
+
+.custom-card-group .custom-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-title {
+    text-align: map-get($alineacion, cen);
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: start;
+    font-size: map-get($tamanios , 1);
+}
+
+.card_link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card_link:hover {
+    transform: scale(1.05);
+}

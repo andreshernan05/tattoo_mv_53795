@@ -1,0 +1,59 @@
+/* ---------------------- VARIABLES -------------------*/
+$gradiente: linear-gradient(to right top, #c00101, #bd0042, #a5296a, #81447e, #5f527d, #4b5172, #3f4e62, #3d4851, #313d42, #283234, #202727, #181c1b);
+$gradiente_header: linear-gradient(to left, #c00101, #bd0042, #a5296a, #81447e, #5f527d, #4b5172, #3f4e62, #3d4851, #313d42, #283234, #202727, #181c1b);
+$gradiente_footer: linear-gradient(to left, #c00101, #bd0042, #a5296a, #81447e, #5f527d, #4b5172, #3f4e62, #3d4851, #313d42, #283234, #202727, #181c1b);
+$gradiente_card: radial-gradient(circle, #4f5562, #525865, #555b68, #595f6b, #5c626e, #666b76, #6f737d, #797c85, #8b8c93, #9d9da2, #aeaeb1, #c0c0c0);
+$gradiente_ig: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+$subrayado: #fff;
+$bg-color2: #5C4B51;
+$st-color: #F06060;
+$nd-color: #F3B562;
+$rd-color: #F2EBBF;
+$fb-color: #3b5998;
+$yt-color: red;
+$tk-color: black;
+$ig-color: #e1306c;
+$line-color: #F2EBBF;
+$solid: solid;
+$font1: "Ubuntu", sans-serif;
+$font2: "Lora", sans-serif;
+$alto: 100%;
+/* ---------------------- MAPAS -----------------------*/
+
+$ancho: (
+    100:100%,
+    90:90%,
+    80:80%,
+    50:50%,
+    40:40%,
+    au:auto,
+);
+
+$pixel: (
+    1:1px,
+    2:2px,
+    3:3px,
+    4:4px,
+    5:5px,
+    8:8px,
+    10:10px,
+    20:20px,
+    30:30px,
+    100:100px
+);
+
+$tamanios: (
+    05: 0.5rem,
+    1: 1rem,
+    15: 1.5rem,
+    2: 2rem,
+    25: 2.5rem,
+    3: 3rem,
+    35: 3.5rem,
+    4: 4rem,
+    45: 4.5rem,
+    5a: 5rem
+);
+$alineacion: (
+    st: start,
+    cen: center)

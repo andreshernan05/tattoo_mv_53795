@@ -1,0 +1,32 @@
+/* -------------------------------- CONTACTO Y QUIEN SOY SASS ------------------------------------*/
+
+.fc_h1 {
+    color: $st-color;
+}
+
+.fc_h3 {
+    color: $nd-color;
+}
+
+.fc_h4 {
+    color: $rd-color;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: map-get($pixel , 20);
+}
+
+.grid-container .grid-item {
+    width: map-get($ancho , 100);
+}
+
+.grid-container .grid-item .img_tamaño {
+    max-width: map-get($ancho , 100);
+    height: $alto;
+}
+
+.grid-container .grid-item .fc_parrafo {
+    color: $rd-color;
+}

@@ -1,0 +1,6 @@
+@mixin formatos($fuente , $color , $tamanio) {
+    color: $color;
+    font-family: $fuente;
+    font-size: $tamanio;
+
+}

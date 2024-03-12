@@ -1,0 +1,25 @@
+/*-------------------------------------- PAGINA EVENTOS  SASS------------------------------------------------------*/
+
+.card {
+    background-image: $gradiente_card;
+    border: 2px solid $tk-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card iframe {
+    width: map-get($ancho, 100);
+    height: 200px;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.card .fc_h6 {
+    color: $rd-color;
+    text-align: map-get($alineacion , cen);
+    justify-content: map-get($alineacion , cen);
+    width: map-get($ancho , au);
+    height: $alto;
+}
