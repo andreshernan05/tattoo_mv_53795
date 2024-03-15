@@ -9,17 +9,18 @@
 }
 
 .fc_h4 {
+    @include formatos2($font2, $rd-color, 0, 90%, justify, 2rem);
     color: $rd-color;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: map-get($pixel , 20);
 }
 
 .grid-container .grid-item {
-    width: map-get($ancho , 100);
+    text-align: map-get($alineacion, cen);
 }
 
 .grid-container .grid-item .img_tamaño {
@@ -28,5 +29,19 @@
 }
 
 .grid-container .grid-item .fc_parrafo {
-    color: $rd-color;
+    @include formatos2($font2, $rd-color, 1.2rem, 90%, justify, 2rem);
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 0 20px;
+    }
 }

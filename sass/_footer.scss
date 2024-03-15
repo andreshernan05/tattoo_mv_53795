@@ -73,3 +73,11 @@ footer .top {
         transform: translateY(calc(-50% - 20px));
     }
 }
+
+@media (max-width: 767px) {
+    footer .top {
+        bottom: unset;
+        top: 20px;
+        transform: translateY(0);
+    }
+}

@@ -2,5 +2,13 @@
     color: $color;
     font-family: $fuente;
     font-size: $tamanio;
+}
 
+@mixin formatos2($fuente , $color , $tamanio, $w, $alin, $inter) {
+    color: $color;
+    font-family: $fuente;
+    font-size: $tamanio;
+    width: $w;
+    text-align: $alin;
+    line-height: $inter;
 }

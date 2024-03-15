@@ -21,8 +21,8 @@
 
 .main .section_titulos .cparrafo {
     /* ------------------------------ SETEO DEL PARRAFO --------------------------*/
-    @include formatos($font2, $rd-color, 1rem);
-    width: map-get($ancho , 50);
+    @include formatos2($font2, $rd-color, 1.2rem, 50%, justify, 2rem);
     margin: 0 auto;
     margin-top: map-get($pixel , 20);
+
 }

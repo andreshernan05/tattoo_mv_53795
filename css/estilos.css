@@ -80,8 +80,10 @@
   /* ------------------------------ SETEO DEL PARRAFO --------------------------*/
   color: #F2EBBF;
   font-family: "Lora", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 50%;
+  text-align: justify;
+  line-height: 2rem;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -194,16 +196,22 @@
 
 .fc_h4 {
   color: #F2EBBF;
+  font-family: "Lora", sans-serif;
+  font-size: 0;
+  width: 90%;
+  text-align: justify;
+  line-height: 2rem;
+  color: #F2EBBF;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
 .grid-container .grid-item {
-  width: 100%;
+  text-align: center;
 }
 
 .grid-container .grid-item .img_tamaño {
@@ -213,8 +221,24 @@
 
 .grid-container .grid-item .fc_parrafo {
   color: #F2EBBF;
+  font-family: "Lora", sans-serif;
+  font-size: 1.2rem;
+  width: 90%;
+  text-align: justify;
+  line-height: 2rem;
+  margin-left: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 0 20px;
+  }
+}
 .h3_footer {
   color: #F2EBBF;
 }
@@ -286,6 +310,13 @@ footer .top {
 @media (min-width: 768px) {
   footer .top {
     transform: translateY(calc(-50% - 20px));
+  }
+}
+@media (max-width: 767px) {
+  footer .top {
+    bottom: unset;
+    top: 20px;
+    transform: translateY(0);
   }
 }
 
