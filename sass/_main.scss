@@ -7,7 +7,11 @@
     text-align: center;
 }
 
-.main .section_titulos .ctitulo {
+.main .section_titulos .main-titulo {
+    overflow: hidden;
+}
+
+.main .section_titulos .main-titulo .ctitulo {
     /* ---------------------------------------- SETEO DEL TITULO -------------------*/
     @include formatos($font1, $st-color, 2.5rem);
     font-weight: 700;
@@ -21,8 +25,10 @@
 
 .main .section_titulos .cparrafo {
     /* ------------------------------ SETEO DEL PARRAFO --------------------------*/
-    @include formatos2($font2, $rd-color, 1.2rem, 50%, justify, 2rem);
+    @include formatos ($font2, $rd-color, 1.2rem);
+    text-align: map-get($alineacion, jus);
+    line-height: map-get($tamanios, 2);
+    width: map-get($ancho , 80);
     margin: 0 auto;
     margin-top: map-get($pixel , 20);
-
 }
