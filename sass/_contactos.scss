@@ -1,4 +1,11 @@
 /* -------------------------------- CONTACTO Y QUIEN SOY SASS ------------------------------------*/
+.body-quiensoy {
+    overflow: hidden;
+}
+
+.body-contacto {
+    @extend .body-quiensoy;
+}
 
 .fc_h1 {
     color: $st-color;

@@ -200,6 +200,10 @@
 }
 
 /* -------------------------------- CONTACTO Y QUIEN SOY SASS ------------------------------------*/
+.body-quiensoy, .body-contacto {
+  overflow: hidden;
+}
+
 .fc_h1 {
   color: #F06060;
   overflow: hidden;
