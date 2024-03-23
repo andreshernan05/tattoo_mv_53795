@@ -201,7 +201,7 @@
 
 /* -------------------------------- CONTACTO Y QUIEN SOY SASS ------------------------------------*/
 .body-quiensoy, .body-contacto {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .fc_h1 {
