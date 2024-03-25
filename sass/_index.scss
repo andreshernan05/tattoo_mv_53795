@@ -16,8 +16,7 @@
 
 .card-text {
     @include formatos2($font2, $rd-color, 1rem, auto, justify, 1.5rem);
-    /*text-align: start;
-    font-size: map-get($tamanios , 1);*/
+
 }
 
 .card_link {

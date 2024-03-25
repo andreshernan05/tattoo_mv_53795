@@ -32,3 +32,8 @@
     margin: 0 auto;
     margin-top: map-get($pixel , 20);
 }
+
+.main .section_titulos .sub-h3 {
+    @include formatos($font1, $nd-color, 1.2rem);
+    padding-top: 10px;
+}
