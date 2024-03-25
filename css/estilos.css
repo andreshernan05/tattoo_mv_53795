@@ -259,12 +259,15 @@
     padding: 0 20px;
   }
 }
-.h3_footer {
-  color: #F2EBBF;
-}
-
 .bg-color {
   background-image: linear-gradient(to left, #c00101, #bd0042, #a5296a, #81447e, #5f527d, #4b5172, #3f4e62, #3d4851, #313d42, #283234, #202727, #181c1b);
+}
+.bg-color .redes {
+  align-content: center;
+  margin-left: 8%;
+}
+.bg-color .redes .h3_footer {
+  color: #F2EBBF;
 }
 
 .bg-color .iconos {

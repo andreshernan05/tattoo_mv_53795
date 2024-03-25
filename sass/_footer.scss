@@ -1,9 +1,14 @@
-.h3_footer {
-    color: $rd-color;
-}
-
 .bg-color {
     background-image: $gradiente_footer;
+
+    .redes {
+        align-content: center;
+        margin-left: 8%;
+
+        .h3_footer {
+            color: $rd-color;
+        }
+    }
 }
 
 .bg-color .iconos {
