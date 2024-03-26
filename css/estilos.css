@@ -254,6 +254,22 @@
   margin-left: 20px;
 }
 
+.botones {
+  text-align: center;
+}
+.botones .btn:hover {
+  border-color: rgba(0, 0, 0, 0.521);
+}
+
+.botones input,
+.botones button {
+  background-image: linear-gradient(to left, #c00101, #bd0042, #a5296a, #81447e, #5f527d, #4b5172, #3f4e62, #3d4851, #313d42, #283234, #202727, #181c1b);
+  color: #F2EBBF;
+  border: none;
+  border-top: 3px solid #F2EBBF;
+  border-left: 3px solid #F2EBBF;
+}
+
 @media only screen and (min-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;

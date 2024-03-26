@@ -42,6 +42,25 @@
     margin-left: 20px;
 }
 
+.botones {
+    text-align: center;
+
+    .btn:hover {
+        border-color: rgba(0, 0, 0, 0.521);
+    }
+}
+
+.botones input,
+.botones button {
+    background-image: $gradiente_header;
+    color: $rd-color;
+    border: none;
+    border-top: 3px solid $line-color;
+    border-left: 3px solid $line-color;
+
+
+}
+
 @media only screen and (min-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;

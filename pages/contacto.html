@@ -79,23 +79,27 @@
                     <div class="col-12 col-md-6">
                         <form action="">
                             <div class="mb-3"><!-- **************** NOMBRE ************************-->
-                                <input type="text" placeholder="Nombre" class="form-control" id="name" name="name">
+                                <input type="text" placeholder="Nombre" class="form-control" id="name" name="name"
+                                    minlength="3">
                             </div>
                             <div class="mb-3"> <!-- **************** MAIL ************************-->
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="name@example.com">
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="correo@dominio.com">
                             </div>
                             <div class="mb-3"> <!-- **************** TELEFONO ************************-->
                                 <input type="tel" class="form-control" id="tel" name="tel" placeholder="Télefono">
                             </div>
                             <div class="mb-3"> <!-- ****************** CONSULTAS *************-->
                                 <textarea class="form-control" id="consulta" name="consulta"
-                                    placeholder="Escriba su consulta" rows="3"></textarea>
+                                    placeholder="Escriba su consulta" rows="5" required></textarea>
                             </div>
-                            <div class="text-center"> <!-- ******************** BOTON ENVIAR ******************-->
-                                <input type="submit" class=" w-50 btn btn-primary mb-3" id="enviar" name="enviar"
+                            <div class="botones"> <!-- ******************** BOTON ENVIAR ******************-->
+                                <input type="submit" class=" w-50 btn btn-primary mb-3 " id="enviar" name="enviar"
                                     value="Enviar">
+
+                                <button type="reset" class=" w-50 btn btn-primary mb-3">Borrar Formulario</button>
                             </div>
+
                         </form>
                     </div>
                     <div class="col-12 col-md-6">
