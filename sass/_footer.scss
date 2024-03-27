@@ -3,7 +3,7 @@
 
     .redes {
         align-content: center;
-        margin-left: 8%;
+        padding-left: 30px;
 
         .h3_footer {
             color: $rd-color;
@@ -70,16 +70,23 @@ footer .top {
 @media screen and (max-width: 768px) {
     footer section {
         border-bottom: map-get($pixel , 2) solid $line-color;
+        padding-bottom: 10px;
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width:768px) {
+    footer .texto_footer {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
     footer .top {
         transform: translateY(calc(-50% - 20px));
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     footer .top {
         bottom: unset;
         top: 20px;
